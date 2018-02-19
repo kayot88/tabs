@@ -1,0 +1,1 @@
+[2018-02-14 13:35:48] layer "In Far Cry 4, players find themselves in Kyrat, a breathtaking,": Expected end of input but "," found.

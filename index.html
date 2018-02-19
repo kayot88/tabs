@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JS</title>
+	<link  rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/ionicons.css">
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+	<link  rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ba-container">
+		<div class="ba-card">
+			<div class="ba-card__toggle">
+				<ul class="ba-tab-menu">
+					<li>
+						<a href="#tab-information" data-tab="tab-information" class="ba-tab-menu__item">
+							<svg width="22.376" height="22.376">
+								<use xlink:href="#tooltip" />
+							</svg>
+							<p>Information</p>
+						</a>
+					</li>
+					<li>
+						<a href="#tab-rating-info" data-tab="tab-rating-info" class="ba-tab-menu__item">
+							<svg width="19" height="21">
+								<use xlink:href="#card" />
+							</svg>
+							<p>Ratings Info</p>
+						</a>
+					</li>
+					<li>
+						<a href="#where-to-buy" data-tab="where-to-buy" class="ba-tab-menu__item">
+							<svg width="20" height="20">
+								<use xlink:href="#basket" />
+							</svg>
+							<p>Where to buy</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ba-tab ba-tab--active" id="tab-information" data-tab="tab-information">
+				<div class="ba-grid">
+					<div class="ba-width-1-3">
+						<div class="ba-item__cover">
+							<img src="img/farcry4.jpg" alt="FarCity 4">
+							<div class="center">
+								<div id="rateYo"></div></div>
+							</div>
+						</div>
+						<div class="ba-width-2-3">
+							<div class="ba-item__description">
+								<div class="ba-wrap-circle">
+									<h1 class="ba-item__title">FarCry 4</h1>
+									<div class="container" id="container">
+									</div>
+								</div>
+								<p class="ba-item__subtitle">First Released
+									<time datetime="2014-11-17">Nov 17, 2014</time>
+								</p>
+
+								<p class="in_far">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling
+								under the regime of a despotic self-appointed king.</p>
+
+								<div class="ba-item__shop cf">
+									<div class="ba-item__price ba-float-left">
+										<span>20% OFF!</span>
+										<p>$59.96</p>
+									</div>
+									<div class="ba-button-div">
+										<a href="#" class="ba-button">BUY IT NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ba-tab" id="tab-rating-info" data-tab="tab-rating-info">
+					<div class="overlay-navigation">
+						<nav role="navigation">
+							<ul>
+								<li><a href="#" data-content="The beginning">Home</a></li>
+								<li><a href="#" data-content="Curious?">About</a></li>
+								<li><a href="#" data-content="I got game">Skills</a></li>
+								<li><a href="#" data-content="Only the finest">Works</a></li>
+								<li><a href="#" data-content="Don't hesitate">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="home">
+						<div class="open-overlay">
+							<span class="bar-top bar-all"></span>
+							<span class="bar-middle bar-all"></span>
+							<span class="bar-bottom bar-all"></span>
+						</div>
+					</div>
+				</div>
+				<div class="ba-tab" id="where-to-buy" data-tab="where-to-buy">
+					<div class="loader"></div>
+					<canvas id="bg-canvas"></canvas>
+					<div class="slider">
+						<canvas id="in-canvas"></canvas>
+						<div class="container">
+							<div class="slide">
+								<div class="bg">
+									<img src="https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5dF84bDdaQ0d4cnc">
+								</div>
+							</div>
+							<div class="slide">
+								<div class="bg">
+									<img src="https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5a1NCUk1FQ1RUUjA">
+								</div>
+							</div>
+							<div class="slide">
+								<div class="bg">
+									<img src="https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5MWhVdXk1UUIyanM">
+								</div>
+							</div>
+							<div class="slide">
+								<div class="bg">
+									<img src="https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5MzBCbXppN2pTQ00">
+								</div>
+							</div>
+						</div>
+						<div class="controls">
+							<div class="prev">
+								<</div>
+								<ul class="cont-list">
+									<li class="active"><span></span></li>
+									<li><span class="slide-lib"></span></li>
+									<li><span class="slide-lib"></span></li>
+									<li><span class="slide-lib"></span></li>
+								</ul>
+								<div class="next">></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<svg style="display: none;" width="25" height="25">
+				<symbol id="tooltip">
+					<path
+					d="M362.4 196.999H358.78L354.98999999999995 200.789C354.73599999999993 201.04299999999998 354.38599999999997 201.2 353.99999999999994 201.2C353.61299999999994 201.2 353.2629999999999 201.04299999999998 353.00999999999993 200.789L349.2199999999999 196.999H345.5999999999999C344.0529999999999 196.999 342.7999999999999 195.746 342.7999999999999 194.2V181.599C342.7999999999999 180.053 344.0529999999999 178.79999999999998 345.5999999999999 178.79999999999998H362.3999999999999C363.9459999999999 178.79999999999998 365.19999999999993 180.05299999999997 365.19999999999993 181.599V194.2C365.19999999999993 195.74599999999998 363.9459999999999 196.999 362.3999999999999 196.999ZM362.4 182.999C362.4 182.226 361.77299999999997 181.599 361 181.599H347C346.226 181.599 345.6 182.226 345.6 182.999V192.799C345.6 193.572 346.226 194.20000000000002 347 194.20000000000002H349.8C350.18600000000004 194.20000000000002 350.536 194.35600000000002 350.79 194.61L354 197.81900000000002L357.21 194.61C357.46299999999997 194.35600000000002 357.813 194.20000000000002 358.2 194.20000000000002H361C361.773 194.20000000000002 362.4 193.57200000000003 362.4 192.799ZM358.2 191.399H349.8C349.026 191.399 348.40000000000003 190.773 348.40000000000003 189.999C348.40000000000003 189.226 349.026 188.599 349.8 188.599H358.2C358.973 188.599 359.59999999999997 189.226 359.59999999999997 189.999C359.59999999999997 190.773 358.97299999999996 191.399 358.2 191.399ZM359.6 185.799C359.6 185.026 358.973 184.399 358.20000000000005 184.399H349.80000000000007C349.02600000000007 184.399 348.4000000000001 185.026 348.4000000000001 185.799C348.4000000000001 186.573 349.02600000000007 187.199 349.80000000000007 187.199H358.20000000000005C358.97300000000007 187.199 359.6 186.573 359.6 185.799Z " transform="matrix(1,0,0,1,-342,-178)"></path>
+				</symbol>
+
+				<symbol id="card">
+					<path d="M543.993 190.308C543.993 192.986 541.868 195.15699999999998 539.2460000000001 195.15699999999998C537.6920000000001 195.15699999999998 536.3320000000001 194.38199999999998 535.4720000000001 193.2L535.4490000000001 193.21699999999998L534.5000000000001 191.92399999999998L533.5500000000001 193.21699999999998L533.537 193.207C532.671 194.384 531.306 195.15699999999998 529.753 195.15699999999998C527.1320000000001 195.15699999999998 525.0070000000001 192.986 525.0070000000001 190.308C525.0070000000001 189.21599999999998 525.373 188.218 525.969 187.408L525.956 187.398C525.956 187.398 532.918 178.992 534.5 178.992C536.082 178.992 543.043 187.398 543.043 187.398L543.03 187.408C543.626 188.218 543.9929999999999 189.21599999999998 543.9929999999999 190.308ZM531.336 198.39C531.336 199.28199999999998 532.044 200.00699999999998 532.918 200.00699999999998H536.082C536.956 200.00699999999998 537.664 199.28199999999998 537.664 198.39C537.664 197.49699999999999 536.956 196.773 536.082 196.773V195.15699999999998C536.082 194.265 535.374 193.54 534.5 193.54C533.626 193.54 532.918 194.265 532.918 195.15699999999998V196.773C532.044 196.773 531.336 197.49699999999999 531.336 198.39Z " transform="matrix(1,0,0,1,-525,-178)"></path>
+				</symbol>
+
+				<symbol id="basket">
+					<path d="M722.946 186.765L722.97 186.771L720.47 198.021L720.446 198.015C720.321 198.57399999999998 719.846 198.999 719.25 198.999H706.75C706.154 198.999 705.679 198.57399999999998 705.554 198.015L705.53 198.021L703.03 186.771L703.054 186.765C703.034 186.677 703 186.594 703 186.5C703 185.809 703.56 185.25 704.25 185.25H706.75C706.75 181.798 709.548 178.999 713 178.999C716.452 178.999 719.25 181.798 719.25 185.25H721.75C722.44 185.25 723 185.809 723 186.5C723 186.594 722.966 186.677 722.946 186.765ZM713 181.499C710.929 181.499 709.25 183.178 709.25 185.25H716.75C716.75 183.178 715.071 181.499 713 181.499ZM718 190.25C717.31 190.25 716.75 189.69 716.75 188.999V187.75H709.25V188.999C709.25 189.69 708.69 190.25 708 190.25C707.31 190.25 706.75 189.69 706.75 188.999V187.75H705.808L707.753 196.499H718.2470000000001L720.1920000000001 187.75H719.2500000000001V188.999C719.2500000000001 189.69 718.6900000000002 190.25 718.0000000000001 190.25Z " transform="matrix(1,0,0,1,-703,-178)"></path>
+				</symbol>
+
+				<symbol id="star">
+					<path d="M299.335 594.302C301.055 593.487 304.04999999999995 592.067 304.04999999999995 592.067C304.04999999999995 592.067 306.99299999999994 593.448 308.86499999999995 594.327C308.2579999999999 594.042 310.4309999999999 595.568 310.22999999999996 593.451C310.03799999999995 591.4150000000001 309.729 588.145 309.729 588.145C309.729 588.145 311.876 585.754 313.217 584.261C312.657 584.884 314.757 583.182 312.80199999999996 582.813C310.825 582.441 307.282 582.179 307.282 582.179C307.282 582.179 305.873 578.924 304.83299999999997 577.124C305.31699999999995 577.962 304.284 575.273 303.246 577.085C302.214 578.885 300.702 582.193 300.702 582.193C300.702 582.193 297.266 582.461 295.288 582.84C296.063 582.692 293.478 582.76 294.791 584.215C296.131 585.698 298.361 588.168 298.361 588.168C298.361 588.168 298.063 591.452 297.877 593.487C297.925 592.961 297.201 595.313 299.33500000000004 594.302Z " transform="matrix(1,0,0,1,-294,-576)"></path>
+				</symbol>
+
+			</svg>
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/radial-progress-bar.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+						<script src="js/load.js"></script>
+			<script src="js/script.js"></script>
+		</body>
+		</html>	
